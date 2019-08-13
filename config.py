@@ -96,6 +96,8 @@ define_keymap(lambda wm_class: wm_class not in ("Emacs", "URxvt", "st-256color")
     K("C-g"): [K("esc"), set_mark(False)],
     # Escape
     K("C-q"): escape_next_key,
+    # M-BACKSPACE = C-BACKSPACE
+    K("M-BACKSPACE"): K("C-BACKSPACE"),
     # C-x YYY
     K("C-x"): {
         # C-x h (select all)
