@@ -50,7 +50,7 @@ define_keymap(re.compile("Firefox|Google-chrome"), {
 # }, "Zeal")
 
 # Emacs-like keybindings in non-Emacs applications
-define_keymap(lambda wm_class: wm_class not in ("Emacs", "URxvt", "st-256color"), {
+define_keymap(lambda wm_class: wm_class not in ("Emacs", "URxvt", "st-256color", "dmenu"), {
     # Cursor
     K("C-b"): with_mark(K("left")),
     K("C-f"): with_mark(K("right")),
